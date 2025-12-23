@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Triangle Pattern</title>
+</head>
+<body>
+
+<form class="col-lg-6 mx-auto my-5 p-5 shadow">
+    <h3>Right Angle Triangle Star Pattern</h3>
+
+    <div class="mt-4 text-center" id="output"></div>
+</form>
+
+<script>
+    let i = 1;
+    let result = "";
+
+    while (i <= 5) {
+        let j = 1;
+        while (j <= i) {
+            result += "* ";
+            j++;
+        }
+        result += "<br>";
+        i++;
+    }
+
+    document.getElementById("output").innerHTML = result;
+</script>
+
+</body>
+</html>

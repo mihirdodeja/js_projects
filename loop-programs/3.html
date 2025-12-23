@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd/Even</title>
+     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <form class="col-lg-6 mx-auto my-5 p-5 shadow">
+        <h1 class="text-center">Even/Odd Number</h1>
+
+        <div class="mt-4">
+            Enter Number: <input type="text" id="number" class="form-control">
+        </div>
+
+        <div class="mt-4 justify-content-center d-flex">
+            <button onclick="evenodd()" class="btn btn-success" type="button">Submit</button>
+        </div>
+
+        <div class="mt-4" id="output"></div>
+    </form> 
+    <script>
+        function evenodd()
+        {
+            var num=Number(document.getElementById("number").value);
+            var result=" ";
+
+            if(num%2==0)
+            {
+                result=`${num} is Even Number`;
+            }
+            else
+            {
+                result=`${num} is Odd Number`;
+            }
+
+            document.getElementById("output").innerHTML=result;
+        }
+    </script>
+</body>
+</html>
